@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Syllabus and Notes</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML Syllabus and Notes</h1>
+        
+        <div class="topic">
+            <h2 onclick="showModal(this, 'password1')">1. Digital Page or Webpage Creation</h2>
+            <div class="content">
+                <p>Create a Digital Page </p>
+                <pre>
+<b>First Class of HTML</b>
+
+1) Digital Page 
+
+Step:1 Open Notepad 
+Step:2 Save As 
+Step:3 "Your Project Name" 
+Step:4 In the last use ".html"
+Step:5 Done Enjoy the "Digital Page"
+                </pre>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2 onclick="showModal(this, 'password2')">2.What is HTML??</h2>
+            <div class="content">
+                <p>Hyper Text Markup Language</p>
+                <pre>
+<b>Second Class of HTML</b>
+
+What is HTML ?
+
+HTML is a language Where 
+we can write a content for the 
+webpage( Structure the Page )
+
+HTML 
+
+Full form of HTML
+
+Hyper Text Markup Language
+
+<b>------Important Terms ------</b>
+1) Tag 
+~ Structure the Content 
+
+
+                </pre>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2 onclick="showModal(this, 'password3')">3. Types of Tags</h2>
+            <div class="content">
+                <p>Tags are Most Important in HTML</p>
+                <pre>
+<b>Third Class of HTML</b>
+
+Tags in HTML
+
+~ HTML tags are generally classified 
+   into two main types:
+
+~ Opening Tag & Closing Tag: 
+    Tags that come in pairs (e.g., < div>< /div>).
+
+~ Self-Closing Tags: 
+    Tags that do not require a closing counterpart (e.g., < img />, < br />).
+
+
+<b>Some important tips</b>
+
+1) < p> < p >
+
+2) how to use two tags in same content like bold and heading . 
+
+3) Marquee tags.
+                    
+
+                </pre>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2 onclick="showModal(this, 'password4')">4. Popular Tags</h2>
+            <div class="content">
+                <p>Most Popular Tags in HTML</p>
+<pre>
+<b>Most Popular Tags in HTML </b>
+
+1) Heading Tags
+~ h1  < h1> This is First < /h1>
+~ h2  < h2> This is Second < /h2>
+~ h3  < h3> This is Third  < /h3>
+~ h4  < h4> This is Forth  < /h4>
+~ h5  < h5> This is Fifth  < /h5>
+~ h6  < h6> This is Sixth  < /h6>
+
+2) Paragraph Tags
+~ P   < p> This is Paragraph Tag < /p>
+
+3) Bold Tags
+~ b   < b> Make It Bold < /b>
+
+4) Underline Tags
+~ U   < u> Make it Underline < /u>
+
+5) Superscript Tags
+~ sup  a< sup>2< /sup>  
+
+6) Subscript Tags
+~  sub   H< sub>2< /sub>
+
+<b>* Self Closing Tags </b>
+
+1) Line Break ( New Line )
+~ br   < br>
+
+2) Horizontal Rule ( Make a line )
+~ hr  < hr></pre>
+            </div>
+        </div>
+        <div class="topic">
+            <h2 onclick="showModal(this, 'password5')">5. Main Tags in HTML </h2>
+            <div class="content">
+                <p>Main Tags in HTML</p>
+<pre>
+<b>5th Class of HTML </b>
+
+1) Main Tags of HTML 
+
+< !doctype html>    ---> it declear the Version of HTML. 
+
+< html>             ----> Form here The HTML Start. 
+
+< head>             ----> Head define which type of content you gonna write.
+
+< title>            ---> It decide the Title of the Page.
+
+< body>             ---> Here you can write all your content.
+</pre>
+                </div>
+        </div>
+        <div class="topic">
+            <h2 onclick="showModal(this, 'password5')">6. Practical </h2>
+            <div class="content">
+                <p>Practicals</p>
+<pre>
+
+<a  href="1st Praticals( Introduction of Myself ).html"><b class="link">1st Project ( Introduction of Myself) Click on me </b></a> <br>
+<a  href="2nd Praticals ( What is HTML ) .html"><b class="link">2nd Project (What is HTML)Click on me</b></a><br>
+<a  href="3rd Praticals( Module of ADIT).html"><b class="link">3rd Project (Module of ADIT) Click on me</b></a><br>
+<a  href="4th Praticals( Courses Fees ).html"><b class="link">4th Project( Courses Fees) Click on me</b></a><br>
+</pre>
+                </div>
+        </div>
+        <div class="topic">
+            <h2 onclick="showModal(this, 'password5')">7. TEST  </h2>
+            <div class="content">
+                <p>Test</p>
+<pre>
+ <a href="#"><b>Start Quiz</b></a>
+
+</pre>
+                </div>
+        </div>
+        <div class="topic">
+            <h2 onclick="showModal(this, 'password5')">8. Go to Intermediate Level  </h2>
+            <div class="content">
+                <p>Are you Ready for Intermediate Level</p>
+<pre>
+ <a href="#"><b>Click Here to go to Intermediate Level</b></a>
+
+</pre>
+          </div>
+        </div>
+    </div>
+    
+    
+    
+
+    <!-- Password Modal -->
+    <div class="modal" id="passwordModal">
+        <div class="modal-content">
+            <h3>Enter Password</h3>
+            <input type="password" id="modalPassword" placeholder="Enter your password">
+            <div>
+                <button onclick="validatePassword()">Submit</button>
+                <button class="close" onclick="closeModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error Modal -->
+    <div class="modal error-modal" id="errorModal">
+        <div class="modal-content">
+            <h3>Incorrect Password</h3>
+            <p>The password you entered is incorrect. Please try again.</p>
+            <button onclick="closeErrorModal()">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
