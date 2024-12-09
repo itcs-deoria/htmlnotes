@@ -6,7 +6,7 @@ const passwords = {
     password2: "itcs",
     password3: "4321",
     password4: "itcs",
-    password5: "itcs"
+    password5: "htmltest"
 };
 
 // Show the custom modal
