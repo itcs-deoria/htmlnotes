@@ -3,10 +3,12 @@ let currentElement, currentPasswordKey;
 // Passwords for each section
 const passwords = {
     password1: "1234",
-    password2: "itcs",
-    password3: "4321",
-    password4: "itcs",
-    password5: "htmltest"
+    password2: "1234",
+    password3: "1234",
+    password4: "1234",
+    password5: "1234",
+    password6: "test",
+    password7: "1234"
 };
 
 // Show the custom modal
@@ -66,3 +68,21 @@ window.onclick = function(event) {
         closeErrorModal();
     }
 };
+ // Disable Right-Click
+    document.addEventListener('contextmenu', (event) => {
+        event.preventDefault();
+    });
+
+    // Disable Developer Tools Shortcuts
+    document.addEventListener('keydown', (event) => {
+        // Disable F12
+        if (event.key === "F12") {
+            event.preventDefault();
+        }
+        // Disable Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U, and Ctrl+Shift+C
+        if ((event.ctrlKey && event.shiftKey && 
+            (event.key === "I" || event.key === "J" || event.key === "C")) || 
+            (event.ctrlKey && event.key === "U")) {
+            event.preventDefault();
+        }
+    });
